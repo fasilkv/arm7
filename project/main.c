@@ -13,13 +13,16 @@ struct RTCCLK{
 };
 #endif
 
+#define timeout 10
+
 void rtc_update();
 
 uint8_t parent = 0,child = 0;
 uint8_t flag = 0;
 uint8_t t_hr=12,t_min=0,t_sec=0;
+uint8_t timeout_clk = 0;
 
-struct RTCCLK rtc = {0,0,12,6,1,1,2000};
+struct RTCCLK rtc = {10,30,12,6,1,1,2000};
 char time_buf[15];
 char date_buf[15];
 char week[7][10] = {"SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATDAY"}; 
@@ -43,15 +46,8 @@ int main()
 //	oled_clear();
 	while(1)
 	{
-		rtc_update();
 		if(flag == 1)
-		{
-//			if(parent == 0 && child == 0)
-//			{
-//				oled_home_win();
-//			}
-//			else 
-				
+		{				
 			if(parent == 1 && child == 0)
 			{
 				///menu window
@@ -81,16 +77,21 @@ int main()
 			{
 				//remider
 			}
-			else if(parent == 1 && child == 6)
+			
+			timeout_clk++;
+			if(timeout_clk>timeout)
 			{
 				parent=0;
-				child =0;
-				flag=1;
+				child = 0;
+				flag=0;
 			}
-		}
-		
 
-		//	delay_ms(50);
+		}
+		else
+		{
+			rtc_update();
+		}
+		delay_ms(10);
 		
 	}
 

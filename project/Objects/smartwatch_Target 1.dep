@@ -2,11 +2,11 @@ Dependencies for Project 'smartwatch', Target 'Target 1': (DO NOT MODIFY !)
 F (.\Startup.s)(0x559CFDE8)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 526"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
 F (.\main_interup.c)(0x5FE85154)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\main_interup.o --omf_browse .\objects\main_interup.crf --depend .\objects\main_interup.d)
 I (header.h)(0x5FE84909)
-F (.\oled_window.c)(0x6005B03C)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\oled_window.o --omf_browse .\objects\oled_window.crf --depend .\objects\oled_window.d)
+F (.\oled_window.c)(0x6005CF3D)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\oled_window.o --omf_browse .\objects\oled_window.crf --depend .\objects\oled_window.d)
 I (header.h)(0x5FEA0065)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
 I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
-F (.\main.c)(0x6005ADB7)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.c)(0x6005D4A5)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (header.h)(0x5FEA0065)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
 I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
@@ -36,7 +36,7 @@ I (header.h)(0x5FEA0065)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
 I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
 I (font.h)(0x5FE7345D)
-F (.\ext_interrupt.c)(0x5FE9814A)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\ext_interrupt.o --omf_browse .\objects\ext_interrupt.crf --depend .\objects\ext_interrupt.d)
+F (.\ext_interrupt.c)(0x6005D4A5)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\ext_interrupt.o --omf_browse .\objects\ext_interrupt.crf --depend .\objects\ext_interrupt.d)
 I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
 I (header.h)(0x5FEA0065)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)

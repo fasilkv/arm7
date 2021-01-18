@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\armi2c.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\armi2c.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon Jan 18 21:28:54 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Jan 19 00:04:15 2021
 <BR><P>
 <H3>Maximum Stack Usage =        168 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -211,7 +211,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
 <LI><a href="#[22]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
-<BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_update (via Veneer)
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_update (via Veneer)
 <LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_integer (via Veneer)
 </UL>
 
@@ -324,20 +324,20 @@ Global Symbols
 
 <P><STRONG><a name="[70]"></a>__use_no_semihosting_swi</STRONG> (ARM, 4 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[e]"></a>EINT0_HANDLER</STRONG> (ARM, 116 bytes, Stack size 8 bytes, ext_interrupt.o(i.EINT0_HANDLER))
+<P><STRONG><a name="[e]"></a>EINT0_HANDLER</STRONG> (ARM, 128 bytes, Stack size 8 bytes, ext_interrupt.o(i.EINT0_HANDLER))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EINT0_HANDLER
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> ext_interrupt.o(i.config_vic)
 </UL>
 <P><STRONG><a name="[71]"></a>__semihosting_library_function</STRONG> (ARM, 0 bytes, Stack size 8 bytes, indicate_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[f]"></a>EINT1_HANDLER</STRONG> (ARM, 164 bytes, Stack size 8 bytes, ext_interrupt.o(i.EINT1_HANDLER))
+<P><STRONG><a name="[f]"></a>EINT1_HANDLER</STRONG> (ARM, 176 bytes, Stack size 8 bytes, ext_interrupt.o(i.EINT1_HANDLER))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = EINT1_HANDLER
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> ext_interrupt.o(i.config_vic)
 </UL>
 <P><STRONG><a name="[46]"></a>RTC_GetDateTime</STRONG> (ARM, 88 bytes, Stack size 0 bytes, rtc_driver.o(i.RTC_GetDateTime))
-<BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_update
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_update
 </UL>
 
 <P><STRONG><a name="[3a]"></a>RTC_Init</STRONG> (ARM, 16 bytes, Stack size 0 bytes, rtc_driver.o(i.RTC_Init))
@@ -346,6 +346,8 @@ Global Symbols
 
 <P><STRONG><a name="[3b]"></a>RTC_SetDateTime</STRONG> (ARM, 64 bytes, Stack size 0 bytes, rtc_driver.o(i.RTC_SetDateTime))
 <BR><BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_time_win
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_date_win
 </UL>
 
 <P><STRONG><a name="[2b]"></a>__ARM_common_call_via_r1</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, __printf.o(i.__ARM_common_call_via_r1))
@@ -409,7 +411,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_Command
 </UL>
 
-<P><STRONG><a name="[b]"></a>main</STRONG> (ARM, 368 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[b]"></a>main</STRONG> (ARM, 352 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
 <LI>Call Chain = main &rArr; oled_time_win &rArr; uart_integer &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -419,13 +421,13 @@ Global Symbols
 <LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;config_vic
 <LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;config_eint
-<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetDateTime
 <LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_Init
-<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_update
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_update
 <LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_strings
-<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_time_win
-<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_menu_win
-<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_date_win
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetDateTime
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_time_win
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_menu_win
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_date_win
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
 </UL>
@@ -437,10 +439,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_init
 </UL>
 
-<P><STRONG><a name="[43]"></a>oled_date_win</STRONG> (ARM, 52 bytes, Stack size 8 bytes, oled_window.o(i.oled_date_win))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = oled_date_win
+<P><STRONG><a name="[42]"></a>oled_date_win</STRONG> (ARM, 1260 bytes, Stack size 8 bytes, oled_window.o(i.oled_date_win))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = oled_date_win &rArr; uart_integer &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_strings
+<LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_integer
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetDateTime
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -453,7 +458,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[41]"></a>oled_menu_win</STRONG> (ARM, 576 bytes, Stack size 8 bytes, oled_window.o(i.oled_menu_win))
+<P><STRONG><a name="[40]"></a>oled_menu_win</STRONG> (ARM, 576 bytes, Stack size 8 bytes, oled_window.o(i.oled_menu_win))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = oled_menu_win
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_strings
@@ -461,17 +466,18 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[42]"></a>oled_time_win</STRONG> (ARM, 1276 bytes, Stack size 8 bytes, oled_window.o(i.oled_time_win))
+<P><STRONG><a name="[41]"></a>oled_time_win</STRONG> (ARM, 1248 bytes, Stack size 8 bytes, oled_window.o(i.oled_time_win))
 <BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
 <LI>Call Chain = oled_time_win &rArr; uart_integer &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_strings
 <LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_integer
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_SetDateTime
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[40]"></a>rtc_update</STRONG> (ARM, 140 bytes, Stack size 8 bytes, main.o(i.rtc_update))
+<P><STRONG><a name="[43]"></a>rtc_update</STRONG> (ARM, 140 bytes, Stack size 8 bytes, main.o(i.rtc_update))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136 + Unknown Stack Size
 <LI>Call Chain = rtc_update &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
@@ -493,16 +499,17 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf (via Veneer)
 <LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_strings
 </UL>
-<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_time_win
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_time_win
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_date_win
 </UL>
 
 <P><STRONG><a name="[3f]"></a>uart_strings</STRONG> (ARM, 64 bytes, Stack size 0 bytes, uart_driver.o(i.uart_strings))
-<BR><BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_update
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_update
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_integer
-<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_time_win
-<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_menu_win
-<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_date_win
+<LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_time_win
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_menu_win
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;oled_date_win
 </UL>
 
 <P><STRONG><a name="[33]"></a>waitforsi</STRONG> (ARM, 56 bytes, Stack size 0 bytes, i2c_driver.o(i.waitforsi))

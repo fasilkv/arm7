@@ -3,9 +3,10 @@
 
 uint8_t ok_but=0,scroll_but=0,index_v=1;
 extern uint8_t flag,parent,child;
-
+extern uint8_t timeout_clk;
 void EINT0_HANDLER (void) __irq
 { /// ok_but
+	timeout_clk = 0;
 	
 	flag=1;
 	ok_but=1;
@@ -22,6 +23,7 @@ void EINT0_HANDLER (void) __irq
 void EINT1_HANDLER (void) __irq
 {
 	///scroll button
+	timeout_clk = 0;
 
 	flag = 1;
 	scroll_but =1;
