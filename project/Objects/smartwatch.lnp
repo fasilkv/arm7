@@ -1,0 +1,11 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\main_i2c.o"
+".\objects\gpio_driver.o"
+".\objects\timer0_delay.o"
+".\objects\uart_driver.o"
+".\objects\i2c_driver.o"
+--strict --scatter ".\Objects\smartwatch.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\smartwatch.map" -o .\Objects\smartwatch.axf

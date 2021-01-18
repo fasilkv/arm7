@@ -1,0 +1,15 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\oled_window.o"
+".\objects\main.o"
+".\objects\gpio_driver.o"
+".\objects\timer0_delay.o"
+".\objects\uart_driver.o"
+".\objects\i2c_driver.o"
+".\objects\oled_driver.o"
+".\objects\ext_interrupt.o"
+".\objects\rtc_driver.o"
+--strict --scatter ".\Objects\armi2c.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\armi2c.map" -o .\Objects\armi2c.axf

@@ -1,0 +1,46 @@
+Dependencies for Project 'smartwatch', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x559CFDE8)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 526"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
+F (.\main_interup.c)(0x5FE85154)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\main_interup.o --omf_browse .\objects\main_interup.crf --depend .\objects\main_interup.d)
+I (header.h)(0x5FE84909)
+F (.\oled_window.c)(0x6005B03C)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\oled_window.o --omf_browse .\objects\oled_window.crf --depend .\objects\oled_window.d)
+I (header.h)(0x5FEA0065)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+F (.\main.c)(0x6005ADB7)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (header.h)(0x5FEA0065)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+F (.\main_i2c.c)(0x5FE79868)()
+F (.\main_rtc.c)(0x5FE9FAA3)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\main_rtc.o --omf_browse .\objects\main_rtc.crf --depend .\objects\main_rtc.d)
+I (header.h)(0x5FE84909)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+F (.\header.h)(0x5FEA0065)()
+F (.\gpio_driver.c)(0x5FE7198E)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\gpio_driver.o --omf_browse .\objects\gpio_driver.crf --depend .\objects\gpio_driver.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (header.h)(0x5FEA0065)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
+F (.\timer0_delay.c)(0x5FE71998)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\timer0_delay.o --omf_browse .\objects\timer0_delay.crf --depend .\objects\timer0_delay.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (header.h)(0x5FEA0065)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
+F (.\uart_driver.c)(0x5FE98539)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\uart_driver.o --omf_browse .\objects\uart_driver.crf --depend .\objects\uart_driver.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
+I (header.h)(0x5FEA0065)
+F (.\i2c_driver.c)(0x5FE795D1)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\i2c_driver.o --omf_browse .\objects\i2c_driver.crf --depend .\objects\i2c_driver.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (header.h)(0x5FEA0065)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
+F (.\oled_driver.c)(0x5FE785BB)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\oled_driver.o --omf_browse .\objects\oled_driver.crf --depend .\objects\oled_driver.d)
+I (header.h)(0x5FEA0065)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (font.h)(0x5FE7345D)
+F (.\ext_interrupt.c)(0x5FE9814A)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\ext_interrupt.o --omf_browse .\objects\ext_interrupt.crf --depend .\objects\ext_interrupt.d)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
+I (header.h)(0x5FEA0065)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
+F (.\rtc_driver.c)(0x5FE9FB1C)(--c99 --gnu -c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork --split_sections-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="526"-o .\objects\rtc_driver.o --omf_browse .\objects\rtc_driver.crf --depend .\objects\rtc_driver.d)
+I (header.h)(0x5FEA0065)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EFE64)
+I (C:\Keil_v5\ARM\INC\Philips\lpc214x.h)(0x559CFE30)
